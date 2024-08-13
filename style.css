@@ -1,0 +1,234 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+	list-style:none;
+	text-decoration:none;
+}
+:root{
+	--bg-color:#fff;
+	--text-color:#fff;
+	--navBg-color:#0000ff;
+	
+}
+.drak{
+	--bg-color: #0000008c;
+    --text-color: #fff;
+	--navBg-color: #000000db;	
+}
+body{
+    background:var(--bg-color);
+    height: 100vh;
+
+}
+
+nav{
+    background: var(--navBg-color);
+    color: var(--text-color);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo{
+	width:100px;
+}
+.logo h1{
+	font-size:22px;
+	font-weight:bold;
+	text-transform:capitalize;
+}
+
+.muneNavBar{
+	
+}
+.muneNavBar .listNavbar{
+	display: flex;
+    align-items: center;
+}
+.muneNavBar .listNavbar li{
+    margin: 0 10px;
+}
+.muneNavBar .listNavbar li a{
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: capitalize;	
+	color:var(--text-color);
+}
+.muneNavBar .listNavbar li.team{
+    position: relative;
+	cursor:pointer;
+}
+.muneNavBar .listNavbar li.team span{
+	position:relative;
+}
+.muneNavBar .listNavbar li.team span::before{
+    content: '\f0d7';
+    font-family: "font awesome 5 free";
+    position: absolute;
+    font-size: 20px;
+    font-weight: 600;
+    right: -14px;
+	
+}
+.muneNavBar .listNavbar li.team.active span::before{
+    content: '\f0de';	
+}
+
+.muneNavBar .listNavbar li.team .divsUserTeam{
+	display:none;
+    background: var(--navBg-color);
+    position: absolute;
+    top: 36px;
+    width: 120px;
+    left: 0;
+	transition:0.5s;
+}
+.muneNavBar .listNavbar li.team.active .divsUserTeam{
+	display:block;
+}
+.muneNavBar .listNavbar li.team .divsUserTeam .listUserTeam{
+
+}
+.muneNavBar .listNavbar li.team .divsUserTeam .listUserTeam li{
+margin: 10px 0;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.iconsNavBar{
+	display:flex;
+	align-items:center;
+	gap:20px;
+
+}
+
+.iconsNavBar .boxIcons ,
+.iconsNavBar .iconsMune {
+	position:relative;
+	width:30px;
+	height:30px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	transition:0.5s;
+	cursor:pointer;
+
+}
+.iconsNavBar .iconsMune{
+	display:none;
+		transition:0.5s;
+}
+.iconsNavBar .boxIcons i,
+.iconsNavBar .iconsMune i{
+    position: absolute;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.iconsNavBar .boxIcons .sun,
+.iconsNavBar .iconsMune .xmark{
+	z-index:-1;
+}
+
+.iconsNavBar .boxIcons.active .sun,
+.iconsNavBar .iconsMune.active .xmark{
+	z-index:1;
+}
+.iconsNavBar .boxIcons.active .moon,
+.iconsNavBar .iconsMune.active .bars{
+	z-index:-1;
+}
+
+@media(max-width:600px){
+	.iconsNavBar .iconsMune{
+	display:flex;
+		
+	}
+	.muneNavBar{
+    position: absolute;
+    top: 52px;
+    background: var(--navBg-color);
+    width: 100%;
+	display:none;
+	transition:3s;
+	}
+	.muneNavBar.active{
+			display:block;	
+		}
+	.listNavbar{
+		flex-direction: column;
+	}
+	.muneNavBar .listNavbar li{
+		    margin: 10px 0;
+	}
+	.muneNavBar .listNavbar li.team .divsUserTeam{
+		transition:10s;
+	}
+	.muneNavBar .listNavbar li.team .divsUserTeam{
+		
+		    position: static;
+			width: fit-content;
+	}
+}
+
+
+
+
+
+
+
+
+
+ /* 1201 بكسل وأكثر — شاشات كبيرة جدًا، تلفزيون */
+@media (min-width:1201px){
+
+
+}
+/* 769 بكسل - 1024 بكسل: الشاشات الصغيرة وأجهزة الكمبيوتر المحمولة */
+@media (max-width:1200px){
+
+
+}
+/* 769 بكسل - 1024 بكسل: الشاشات الصغيرة وأجهزة الكمبيوتر المحمولة */
+@media (max-width:1024px){
+
+}
+/* 481 بكسل - 768 بكسل: أجهزة iPad والأجهزة اللوحية */
+@media (max-width:768px){
+
+ 	
+}
+/* 320 بكسل - 480 بكسل: الأجهزة المحمولة */
+@media (max-width:480px){
+
+
+
+}
+/* End sectionMain page  */
+
+
+
+
+
+
+
+
+
